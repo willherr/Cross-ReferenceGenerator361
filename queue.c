@@ -3,6 +3,7 @@
  * Implementation of the queue
  */
 #include "queue.h"
+#include <stdlib.h>
 
 /*
  * newQueue() creates and initializes a queue to an empty queue
@@ -10,6 +11,8 @@
 Queue * newQueue()
 {
   Queue *q = (Queue*) malloc(sizeof(Queue));
+  q->head = NULL;
+  q->tail = NULL;
   return q;
 }
 
@@ -18,13 +21,13 @@ Queue * newQueue()
  */
 void deleteQueue(Queue *q)
 {
-  queueNode *temp;
+  QueueNode *temp;
 
   q->tail = NULL;
   while(q->head != NULL)
   {
     temp = q->head;
-    q->head = q->head->next;
+    q->head = q->head->nextNode;
     free(temp);
   }
 
@@ -36,16 +39,16 @@ void deleteQueue(Queue *q)
  */
 void enequeue(int val, Queue *q)
 {
-  queueNode *temp;
-  temp = (queueNode*) malloc(sizeof(queueNode));
+  QueueNode *temp;
+  temp = (QueueNode*) malloc(sizeof(QueueNode));
   temp->intValue = val;
-  temp->next = NULL;
+  temp->nextNode = NULL;
 
   if(isEmpty(q))
     q->head = q->tail = temp;
   else
   {
-    q->tail->next = temp;
+    q->tail->nextNode = temp;
     q->tail = temp;
   }
 }
@@ -56,7 +59,7 @@ void enequeue(int val, Queue *q)
 int dequeue(Queue *q)
 {
   int result;
-  queueNode *temp;
+  QueueNode *temp;
   
   if(isEmpty(q))
     result = 0;
@@ -64,7 +67,7 @@ int dequeue(Queue *q)
   {
     result = q->head->intValue;
     temp = q->head;
-    q->head = q->head->next;
+    q->head = q->head->nextNode;
     free(temp);
     
     if(isEmpty(q))
