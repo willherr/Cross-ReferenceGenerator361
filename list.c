@@ -1,12 +1,12 @@
 /**
  * William Herrmann
- * Implementation of the List
+ * Header for queue type and queue functions
  */
 
 #include "list.h"
+#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <stdio.h>
 
 // Queue Function Prototypes
 List * newList()
@@ -30,10 +30,12 @@ void deleteList(List *list)
   free(list);
 }
 
-void add(char *str, int line, List *list) //check for existing identifier or add a new node
+void add(char *strr, int line, List *list) //check for existing identifier or add a new node
 {
   ListNode *temp =  list->head;
   ListNode *newNode;
+  char *str = (char *) malloc(sizeof(char)*128);
+  strcpy(str, strr);
 
   if(isListEmpty(list)){
     newNode = (ListNode*) malloc(sizeof(ListNode));
@@ -57,26 +59,27 @@ void add(char *str, int line, List *list) //check for existing identifier or add
     temp->nextNode = newNode;
     newNode->identifier = str;
     newNode->queue = newQueue();
+    newNode->nextNode = NULL;
     enqueue(line, newNode->queue);
   }  
 }
 
 
-void print(List *list)
+void print(List *list, FILE *fout)
 {
   if(isListEmpty(list))
-    printf("There are no identifiers.\n");
+    fprintf(fout,"There are no identifiers.\n");
   else
   {
     ListNode *current = list->head;
     while(current != NULL)
     {
-      printf("Identifier: %s\n", current->identifier);
-      printf("Line Numbers: ");
+      fprintf(fout,"Identifier: %s\n", current->identifier);
+      fprintf(fout,"Line Numbers: ");
       while(!isEmpty(current->queue)){
-	printf("%d",dequeue(current->queue));
+	fprintf(fout,"%d ",dequeue(current->queue));
       }
-      printf("\n\n");
+      fprintf(fout,"\n\n");
       current = current->nextNode;
     }
   }

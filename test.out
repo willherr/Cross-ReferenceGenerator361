@@ -1,0 +1,201 @@
+Identifier: William
+Line Numbers: 2 
+
+Identifier: Herrmann
+Line Numbers: 2 
+
+Identifier: Project
+Line Numbers: 3 
+
+Identifier: implementation
+Line Numbers: 3 
+
+Identifier: include
+Line Numbers: 6 7 8 9 10 11 
+
+Identifier: stdlib
+Line Numbers: 8 
+
+Identifier: h
+Line Numbers: 8 9 10 11 
+
+Identifier: stdio
+Line Numbers: 9 
+
+Identifier: ctype
+Line Numbers: 10 
+
+Identifier: string
+Line Numbers: 11 
+
+Identifier: define
+Line Numbers: 13 14 15 16 17 18 19 20 21 
+
+Identifier: MAX
+Line Numbers: 13 36 
+
+Identifier: READ
+Line Numbers: 13 36 
+
+Identifier: LENGTH
+Line Numbers: 13 36 
+
+Identifier: SPECIAL
+Line Numbers: 14 40 64 98 138 156 162 167 176 182 
+
+Identifier: ALPHANUMERIC
+Line Numbers: 15 61 95 128 148 
+
+Identifier: DOUBLEQUOTE
+Line Numbers: 16 101 134 152 
+
+Identifier: SINGLEQUOTE
+Line Numbers: 17 104 132 150 
+
+Identifier: BLOCKCOMMENT
+Line Numbers: 18 63 113 174 184 
+
+Identifier: LINECOMMENT
+Line Numbers: 19 172 
+
+Identifier: BACKSLASH
+Line Numbers: 20 107 136 154 
+
+Identifier: ASTERISK
+Line Numbers: 21 110 190 
+
+Identifier: void
+Line Numbers: 23 24 25 26 27 28 29 30 31 83 93 125 143 160 165 170 180 188 
+
+Identifier: appendChar
+Line Numbers: 23 83 127 147 
+
+Identifier: char
+Line Numbers: 23 23 24 24 25 25 26 26 27 28 29 30 31 33 36 38 83 83 93 93 125 125 143 143 160 165 170 180 188 
+
+Identifier: str
+Line Numbers: 23 24 25 26 83 85 86 87 
+
+Identifier: c
+Line Numbers: 23 24 25 26 27 28 29 30 31 83 86 
+
+Identifier: handleChar
+Line Numbers: 24 69 93 
+
+Identifier: int
+Line Numbers: 24 24 25 25 26 27 28 29 30 31 33 33 39 40 85 93 93 125 125 143 160 165 170 180 188 
+
+Identifier: state
+Line Numbers: 24 25 26 27 28 29 30 31 40 61 63 64 69 93 95 96 98 99 101 102 104 105 107 108 110 111 113 114 125 128 132 134 136 138 143 148 150 152 154 156 160 162 165 167 170 172 174 176 180 182 184 188 190 
+
+Identifier: lineNumber
+Line Numbers: 24 25 39 62 65 69 93 96 125 130 
+
+Identifier: List
+Line Numbers: 24 25 41 93 125 
+
+Identifier: list
+Line Numbers: 24 25 41 62 69 74 76 93 96 125 130 
+
+Identifier: stateAlphaNumeric
+Line Numbers: 25 96 125 
+
+Identifier: stateSpecial
+Line Numbers: 26 99 143 
+
+Identifier: stateDoubleQuote
+Line Numbers: 27 102 160 
+
+Identifier: stateSingleQuote
+Line Numbers: 28 105 165 
+
+Identifier: stateBackslash
+Line Numbers: 29 108 170 
+
+Identifier: stateAsterisk
+Line Numbers: 30 111 180 
+
+Identifier: stateBlockComment
+Line Numbers: 31 114 188 
+
+Identifier: main
+Line Numbers: 33 
+
+Identifier: argc
+Line Numbers: 33 43 
+
+Identifier: argv
+Line Numbers: 33 49 50 
+
+Identifier: FILE
+Line Numbers: 35 
+
+Identifier: fin
+Line Numbers: 35 49 52 58 77 
+
+Identifier: fout
+Line Numbers: 35 50 52 74 78 
+
+Identifier: strRead
+Line Numbers: 36 37 62 69 93 96 99 125 127 130 143 146 147 
+
+Identifier: charRead
+Line Numbers: 38 58 60 69 93 96 99 102 105 108 111 114 125 126 126 127 131 133 135 143 145 147 149 151 153 160 161 165 166 170 171 173 180 181 188 189 
+
+Identifier: newList
+Line Numbers: 41 
+
+Identifier: if
+Line Numbers: 43 52 60 61 63 95 98 101 104 107 110 113 126 131 133 135 145 149 151 153 161 166 171 173 181 189 
+
+Identifier: printf
+Line Numbers: 44 45 53 54 
+
+Identifier: exit
+Line Numbers: 46 55 
+
+Identifier: fopen
+Line Numbers: 49 50 
+
+Identifier: NULL
+Line Numbers: 52 52 
+
+Identifier: while
+Line Numbers: 58 
+
+Identifier: fscanf
+Line Numbers: 58 
+
+Identifier: EOF
+Line Numbers: 58 
+
+Identifier: add
+Line Numbers: 62 130 
+
+Identifier: else
+Line Numbers: 67 98 101 104 107 110 113 116 129 133 135 137 149 151 153 155 173 175 183 
+
+Identifier: print
+Line Numbers: 74 
+
+Identifier: deleteList
+Line Numbers: 76 
+
+Identifier: fclose
+Line Numbers: 77 78 
+
+Identifier: return
+Line Numbers: 80 
+
+Identifier: len
+Line Numbers: 85 86 87 
+
+Identifier: strlen
+Line Numbers: 85 
+
+Identifier: isalpha
+Line Numbers: 126 145 
+
+Identifier: isdigit
+Line Numbers: 126 
+

@@ -2,7 +2,8 @@
  * William Herrmann
  * Header for queue type and queue functions
  */
-// Queue Structure
+#ifndef QUEUE_H
+#define QUEUE_H
 
 typedef struct QueueNodeStruct
 {
@@ -21,3 +22,5 @@ void deleteQueue(Queue *q);
 void enqueue(int val, Queue *q);
 int  dequeue(Queue *q);
 int  isEmpty(Queue *q);
+
+#endif

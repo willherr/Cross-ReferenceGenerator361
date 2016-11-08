@@ -37,7 +37,7 @@ void deleteQueue(Queue *q)
 /*
  * enqueue() adds an item to the end of the queue
  */
-void enequeue(int val, Queue *q)
+void enqueue(int val, Queue *q)
 {
   QueueNode *temp;
   temp = (QueueNode*) malloc(sizeof(QueueNode));
